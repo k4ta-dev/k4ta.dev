@@ -1,22 +1,11 @@
 export default function Whoami() {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-8 space-y-8">
-      {/* Header */}
-      <div className="brand-border text-center bg-accent-blue text-white">
-        <h1 className="text-4xl font-bold mb-2">WHOAMI</h1>
-        <p className="text-lg opacity-75">Full Stack Engineer & Linux Enthusiast</p>
-      </div>
-
+    <div className="max-w-5xl mx-auto px-6 py-8 space-y-6">
       {/* About Section */}
-      <div className="brand-border">
-        <h2 className="text-2xl font-bold mb-4 text-accent-green">[ About ]</h2>
-        <p className="leading-relaxed mb-4">
-          I'm a full stack software engineer who loves building robust, scalable applications. 
-          My passion lies in exploring the intersection of backend systems, DevOps, and clean architecture.
-        </p>
-        <p className="leading-relaxed">
-          When I'm not coding, you'll find me deep in Linux configurations, optimizing workflows, 
-          or contributing to open-source projects.
+      <div className="brand-border bg-accent-blue">
+        <h2 className="text-2xl font-bold mb-4 text-white">[ About ]</h2>
+        <p className="leading-relaxed mb-3 text-white">
+          I build robust, scalable systems and love working where backend, DevOps, and clean architecture meet. I’ve also built production-ready blockchain integrations and EVM smart contracts.
         </p>
       </div>
 
@@ -80,11 +69,6 @@ export default function Whoami() {
             <p className="opacity-90">Solidity, Ethereum, and other blockchain technologies.</p>
           </div>
         </div>
-      </div>
-
-      {/* Footer note */}
-      <div className="text-center">
-        <p className="text-sm opacity-75">Want to work together? Check out the contact page.</p>
       </div>
     </div>
   );

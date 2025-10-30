@@ -1,8 +1,7 @@
 
 export default function Navbar() {
   return (
-    <nav className="w-full max-w-7xl mx-auto mt-5 flex items-center justify-between px-6 py-3 bg-foreground border-b-2 brand-border">
-      <h1>K4TA</h1>
+    <nav className="w-full max-w-[980px] mx-auto mt-5 flex items-center justify-center px-6 py-3 bg-foreground border-b-2 brand-border">
       <div className="flex gap-4 text-sm">
         <a href="/home" className="button-like">
           [ Home ]
