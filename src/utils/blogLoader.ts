@@ -55,9 +55,18 @@ Object.entries(blogModules).forEach(([path, content]) => {
 });
 
 export function getAllPosts(): BlogPost[] {
-  return Object.values(blogPosts).sort((a, b) => 
-    new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+  return Object.values(blogPosts).sort((a, b) => {
+    const dateA = new Date(a.date).getTime();
+    const dateB = new Date(b.date).getTime();
+
+    // First sort by date descending (newest first)
+    if (dateA !== dateB) {
+      return dateB - dateA;
+    }
+
+    // If dates are equal, sort by filename descending (higher numbers first)
+    return b.id.localeCompare(a.id, undefined, { numeric: true, sensitivity: 'base' });
+  });
 }
 
 export function getPostById(id: string): BlogPost | null {
