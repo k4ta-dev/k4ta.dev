@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Mail, Github, MessageCircle } from 'lucide-react';
 
 export default function Contact() {
   const [email, setEmail] = useState('');
@@ -12,11 +13,48 @@ export default function Contact() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-8 space-y-6">
+    <div className="max-w-5xl mx-auto px-6 py-8 space-y-6 h-[calc(100vh-6rem)] flex justify-center items-center">
       <div className="brand-border">
         <h1 className="text-3xl font-bold mb-6 text-accent-blue">[ Contact Me ]</h1>
+        
+        {/* Social Links Section */}
+        <div className="mb-8 p-4 bg-accent-blue text-white">
+          <p className="mb-4 text-center font-bold">
+            Use proper channels before resorting to below form, i'm paying for API, SMTP is blocked :D
+          </p>
+          <div className="flex justify-center gap-6">
+            <a 
+              href="mailto:kaneda0@protonmail.com" 
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Mail size={20} />
+              <span>Email</span>
+            </a>
+            <a 
+              href="https://github.com/k4ta-dev" 
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github size={20} />
+              <span>GitHub</span>
+            </a>
+            <a 
+              href="https://discord.gg/katanotkate" 
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MessageCircle size={20} />
+              <span>Discord</span>
+            </a>
+          </div>
+        </div>
+
         <p className="mb-6 opacity-90">
-          Have a question or want to work together? Drop me a message below.
+          Or if you insist, use the form below:
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-6">

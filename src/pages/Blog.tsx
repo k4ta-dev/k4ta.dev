@@ -1,16 +1,8 @@
 import { Link } from 'react-router-dom';
-
-// Mock blog data - replace with actual data source later
-const blogPosts = [
-  {
-    id: 1,
-    title: 'Getting Started with Linux',
-    date: '2024-10-15',
-    excerpt: 'My journey into the world of Linux and why I fell in love with it.',
-  },
-];
+import { getAllPosts } from '../utils/blogLoader';
 
 export default function Blog() {
+  const blogPosts = getAllPosts();
   return (
     <div className="max-w-5xl mx-auto px-6 py-8 space-y-6">
       <div className="brand-border">
