@@ -3,8 +3,8 @@ import { Mail, Github, MessageCircle } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-center h-[calc(100vh-6rem)]">
-    <div className="max-w-[95vw] sm:max-w-4xl mx-auto px-6 py-12 brand-border-spaced text-center">
+    <div className="flex justify-center items-center h-[calc(100vh-6rem)] px-6">
+    <div className="max-w-[400px] sm:max-w-4xl mx-auto px-6 py-8 sm:py-12 brand-border-spaced text-center">
       <h1 className="text-2xl sm:text-4xl font-bold mb-6 sm:mb-8 text-accent-blue">Hi, Kata here.</h1>
       <div className="space-y-4 sm:space-y-6 max-w-xl mx-auto">
         <p className="text-base sm:text-lg leading-relaxed">

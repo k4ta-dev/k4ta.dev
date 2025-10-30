@@ -13,8 +13,8 @@ export default function Contact() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-4 sm:space-y-6 h-[calc(100vh-6rem)] flex justify-center items-center">
-      <div className="brand-border w-full max-w-2xl">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-4 sm:space-y-6">
+      <div className="brand-border w-full max-w-2xl mx-auto">
         <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-accent-blue">[ Contact Me ]</h1>
         
         {/* Social Links Section */}
