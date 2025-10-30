@@ -10,8 +10,8 @@
   --color-text: #000000;
   --color-border: #ffffff;
 
-  --font-family-body: "Courier Prime", monospace;
-  --font-family-logo: "Roboto Mono", monospace;
+  --font-family-body: "IBM Plex Mono", monospace;
+  --font-family-logo: "IBM Plex Mono", monospace;
 
   --radius: 0px;
 }
