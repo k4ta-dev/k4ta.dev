@@ -10,6 +10,7 @@ export default function Navbar() {
     { to: '/whoami', label: 'Whoami' },
     { to: '/contact', label: 'Contact' },
     { to: '/blog', label: 'Blog' },
+    { to: '/rices', label: 'Rices' },
   ];
 
   return (
