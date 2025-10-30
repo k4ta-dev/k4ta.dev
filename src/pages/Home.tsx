@@ -3,6 +3,7 @@ import { Mail, Github, MessageCircle } from 'lucide-react';
 
 export default function Home() {
   return (
+    <div className="flex justify-center items-center h-[calc(100vh-6rem)]">
     <div className="max-w-4xl mx-auto px-6 py-12 brand-border-spaced text-center">
       <h1 className="text-4xl font-bold mb-8 text-accent-blue">Hi, Kata here.</h1>
       <div className="space-y-6 max-w-xl mx-auto">
@@ -27,6 +28,7 @@ export default function Home() {
           <p className="text-[12px] opacity-75">You've noticed this website has no domain. The lion is working hard to find the proper one.</p>
         </div>
       </div>
+    </div>
     </div>
   );
 }
