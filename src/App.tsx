@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Whoami from "./pages/Whoami";
+import Contact from "./pages/Contact";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
             <Route path="/" element={<Navigate to="/" replace />} />
             <Route path="/home" element={<Home />} />
             <Route path="/whoami" element={<Whoami />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
       </div>
