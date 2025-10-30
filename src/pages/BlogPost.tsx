@@ -2,6 +2,8 @@ import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { getPostById } from '../utils/blogLoader';
 import ReactMarkdown from 'react-markdown';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 export default function BlogPost() {
   const { id } = useParams<{ id: string }>();
@@ -39,20 +41,36 @@ export default function BlogPost() {
           </p>
         </div>
 
-        <div className="prose prose-lg max-w-none text-text">
+        <div className="prose max-w-none text-text">
           <ReactMarkdown
             components={{
-              h1: ({ children }) => <h1 className="text-3xl font-bold mb-4 mt-6 text-text">{children}</h1>,
-              h2: ({ children }) => <h2 className="text-2xl font-bold mb-3 mt-5 text-text">{children}</h2>,
-              h3: ({ children }) => <h3 className="text-xl font-bold mb-2 mt-4 text-text">{children}</h3>,
-              p: ({ children }) => <p className="mb-4 leading-relaxed text-text">{children}</p>,
-              ul: ({ children }) => <ul className="list-disc list-inside mb-4 space-y-2 text-text">{children}</ul>,
-              ol: ({ children }) => <ol className="list-decimal list-inside mb-4 space-y-2 text-text">{children}</ol>,
-              li: ({ children }) => <li className="text-text">{children}</li>,
+              h1: ({ children }) => <h1 className="text-2xl font-bold mb-3 mt-5 text-text">{children}</h1>,
+              h2: ({ children }) => <h2 className="text-xl font-bold mb-3 mt-4 text-text">{children}</h2>,
+              h3: ({ children }) => <h3 className="text-lg font-bold mb-2 mt-3 text-text">{children}</h3>,
+              p: ({ children }) => <p className="mb-3 leading-relaxed text-sm text-text">{children}</p>,
+              ul: ({ children }) => <ul className="list-disc list-inside mb-3 space-y-1 text-sm text-text">{children}</ul>,
+              ol: ({ children }) => <ol className="list-decimal list-inside mb-3 space-y-1 text-sm text-text">{children}</ol>,
+              li: ({ children }) => <li className="text-text text-sm">{children}</li>,
               strong: ({ children }) => <strong className="font-bold text-text">{children}</strong>,
               em: ({ children }) => <em className="italic text-text">{children}</em>,
-              code: ({ children }) => <code className="bg-foreground px-2 py-1 text-text font-mono text-sm">{children}</code>,
-              pre: ({ children }) => <pre className="bg-foreground p-4 overflow-x-auto mb-4 text-text">{children}</pre>,
+              code: ({ inline, className, children, ...props }: any) => {
+                const match = /language-(\w+)/.exec(className || '');
+                return !inline && match ? (
+                  <SyntaxHighlighter
+                    style={tomorrow}
+                    language={match[1]}
+                    PreTag="div"
+                    className="mb-4 text-xs border-2 border-border"
+                    {...props}
+                  >
+                    {String(children).replace(/\n$/, '')}
+                  </SyntaxHighlighter>
+                ) : (
+                  <code className="bg-background px-1.5 py-0.5 text-text font-mono text-xs border border-border" {...props}>
+                    {children}
+                  </code>
+                );
+              },
               img: ({ src, alt }) => (
                 <img
                   src={src}
