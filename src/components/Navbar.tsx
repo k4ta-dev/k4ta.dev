@@ -2,22 +2,22 @@ import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    <nav className="w-full max-w-[980px] mx-auto mt-5 flex items-center justify-center px-6 py-3 bg-foreground border-b-2 brand-border">
-      <div className="flex gap-4 text-sm">
+    <nav className="w-full sm:max-w-[980px] max-w-[400px] mx-auto mt-5 flex items-center justify-center px-6 py-3 bg-foreground border-b-2 brand-border">
+      <div className="flex gap-2 sm:gap-4 text-[0.5rem] sm:text-sm">
         <Link to="/home" className="button-like">
-          [ Home ]
+          Home
         </Link>
 
         <Link to="/whoami" className="button-like">
-          [ WHOAMI ]
+          Whoami
         </Link>
 
         <Link to="/contact" className="button-like">
-          [ Contact ]
+          Contact 
         </Link>
 
         <Link to="/blog" className="button-like">
-          [ Blog ]
+          Blog 
         </Link>
 
       </div>

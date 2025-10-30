@@ -4,28 +4,28 @@ import { Mail, Github, MessageCircle } from 'lucide-react';
 export default function Home() {
   return (
     <div className="flex justify-center items-center h-[calc(100vh-6rem)]">
-    <div className="max-w-4xl mx-auto px-6 py-12 brand-border-spaced text-center">
-      <h1 className="text-4xl font-bold mb-8 text-accent-blue">Hi, Kata here.</h1>
-      <div className="space-y-6 max-w-xl mx-auto">
-        <p className="text-lg leading-relaxed">
+    <div className="max-w-[95vw] sm:max-w-4xl mx-auto px-6 py-12 brand-border-spaced text-center">
+      <h1 className="text-2xl sm:text-4xl font-bold mb-6 sm:mb-8 text-accent-blue">Hi, Kata here.</h1>
+      <div className="space-y-4 sm:space-y-6 max-w-xl mx-auto">
+        <p className="text-base sm:text-lg leading-relaxed">
           I'm a full stack software engineer and Linux enthusiast. I love tinkering with systems, and sharing what I learn along the way.
         </p>
-        <div className="mt-8 flex justify-center gap-6">
-          <a href="mailto:kaneda0@protonmail.com" className="button-like inline-flex items-center justify-center w-16 h-16">
-            <Mail size={32} />
+        <div className="mt-6 sm:mt-8 flex justify-center gap-4 sm:gap-6">
+          <a href="mailto:kaneda0@protonmail.com" className="button-like inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16">
+            <Mail size={24} className="sm:w-8 sm:h-8" />
           </a>
-          <a href="https://github.com/k4ta-dev" target="_blank" rel="noopener noreferrer" className="button-like inline-flex items-center justify-center w-16 h-16">
-            <Github size={32} />
+          <a href="https://github.com/k4ta-dev" target="_blank" rel="noopener noreferrer" className="button-like inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16">
+            <Github size={24} className="sm:w-8 sm:h-8" />
           </a>
-          <a href="https://discord.gg/katanotkate" target="_blank" rel="noopener noreferrer" className="button-like inline-flex items-center justify-center w-16 h-16">
-            <MessageCircle size={32} />
+          <a href="https://discord.gg/katanotkate" target="_blank" rel="noopener noreferrer" className="button-like inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16">
+            <MessageCircle size={24} className="sm:w-8 sm:h-8" />
           </a>
         </div>
         <div className="mt-4 flex justify-center">
-          <Link to="/contact" className="text-sm opacity-100 link-subtle">or... Contact Me</Link>
+          <Link to="/contact" className="text-xs sm:text-sm opacity-100 link-subtle">or... Contact Me</Link>
         </div>
-        <div className="mt-12 pt-8 border-t-2 border-border">
-          <p className="text-[12px] opacity-75">You've noticed this website has no domain. The lion is working hard to find the proper one.</p>
+        <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t-2 border-border">
+          <p className="text-[10px] sm:text-[12px] opacity-75">You've noticed this website has no domain. The lion is working hard to find the proper one.</p>
         </div>
       </div>
     </div>

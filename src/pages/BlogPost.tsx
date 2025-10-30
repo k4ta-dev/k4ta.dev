@@ -9,10 +9,10 @@ export default function BlogPost() {
 
   if (!post) {
     return (
-      <div className="max-w-5xl mx-auto px-6 py-8">
-        <div className="brand-border text-center py-8">
-          <h1 className="text-2xl font-bold mb-4">Post Not Found</h1>
-          <Link to="/blog" className="button-like inline-block">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+        <div className="brand-border text-center py-6 sm:py-8">
+          <h1 className="text-xl sm:text-2xl font-bold mb-4">Post Not Found</h1>
+          <Link to="/blog" className="button-like inline-block text-xs sm:text-sm">
             [ Back to Blog ]
           </Link>
         </div>
@@ -21,16 +21,16 @@ export default function BlogPost() {
   }
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-8 space-y-6">
-      <Link to="/blog" className="inline-flex items-center gap-2 button-like">
-        <ArrowLeft size={16} />
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-4 sm:space-y-6">
+      <Link to="/blog" className="inline-flex items-center gap-2 button-like text-xs sm:text-sm">
+        <ArrowLeft size={14} className="sm:w-4 sm:h-4" />
         [ Back to Blog ]
       </Link>
 
       <div className="brand-border">
-        <div className="mb-6">
-          <h1 className="text-3xl font-bold mb-2 text-accent-blue">{post.title}</h1>
-          <p className="text-sm opacity-75">
+        <div className="mb-4 sm:mb-6">
+          <h1 className="text-2xl sm:text-3xl font-bold mb-2 text-accent-blue">{post.title}</h1>
+          <p className="text-xs sm:text-sm opacity-75">
             {new Date(post.date).toLocaleDateString('en-US', {
               year: 'numeric',
               month: 'long',

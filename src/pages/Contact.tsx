@@ -13,24 +13,24 @@ export default function Contact() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-8 space-y-6 h-[calc(100vh-6rem)] flex justify-center items-center">
-      <div className="brand-border">
-        <h1 className="text-3xl font-bold mb-6 text-accent-blue">[ Contact Me ]</h1>
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-4 sm:space-y-6 h-[calc(100vh-6rem)] flex justify-center items-center">
+      <div className="brand-border w-full max-w-2xl">
+        <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-accent-blue">[ Contact Me ]</h1>
         
         {/* Social Links Section */}
-        <div className="mb-8 p-4 bg-accent-blue text-white">
-          <p className="mb-4 text-center font-bold">
+        <div className="mb-6 sm:mb-8 p-3 sm:p-4 bg-accent-blue text-white">
+          <p className="mb-3 sm:mb-4 text-center font-bold text-sm sm:text-base">
             Use proper channels before resorting to below form, i'm paying for API, SMTP is blocked :D
           </p>
-          <div className="flex justify-center gap-6">
+          <div className="flex justify-center gap-4 sm:gap-6">
             <a 
               href="mailto:kaneda0@protonmail.com" 
               className="flex items-center gap-2 hover:opacity-80 transition-opacity"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Mail size={20} />
-              <span>Email</span>
+              <Mail size={18} className="sm:w-5 sm:h-5" />
+              <span className="text-sm sm:text-base">Email</span>
             </a>
             <a 
               href="https://github.com/k4ta-dev" 
@@ -38,8 +38,8 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Github size={20} />
-              <span>GitHub</span>
+              <Github size={18} className="sm:w-5 sm:h-5" />
+              <span className="text-sm sm:text-base">GitHub</span>
             </a>
             <a 
               href="https://discord.gg/katanotkate" 
@@ -47,13 +47,13 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <MessageCircle size={20} />
-              <span>Discord</span>
+              <MessageCircle size={18} className="sm:w-5 sm:h-5" />
+              <span className="text-sm sm:text-base">Discord</span>
             </a>
           </div>
         </div>
 
-        <p className="mb-6 opacity-90">
+        <p className="mb-4 sm:mb-6 opacity-90 text-sm sm:text-base">
           Or if you insist, use the form below:
         </p>
 
