@@ -53,6 +53,14 @@ export default function BlogPost() {
               em: ({ children }) => <em className="italic text-text">{children}</em>,
               code: ({ children }) => <code className="bg-foreground px-2 py-1 text-text font-mono text-sm">{children}</code>,
               pre: ({ children }) => <pre className="bg-foreground p-4 overflow-x-auto mb-4 text-text">{children}</pre>,
+              img: ({ src, alt }) => (
+                <img
+                  src={src}
+                  alt={alt}
+                  className="max-w-full h-auto border-2 border-border mb-4"
+                  loading="lazy"
+                />
+              ),
             }}
           >
             {post.content}
