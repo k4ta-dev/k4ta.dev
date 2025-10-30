@@ -13,7 +13,7 @@ export default function App() {
         <Navbar />
         <main className="grow bg-background">
           <Routes>
-            <Route path="/" element={<Navigate to="/" replace />} />
+            <Route path="/" element={<Navigate to="/home" replace />} />
             <Route path="/home" element={<Home />} />
             <Route path="/whoami" element={<Whoami />} />
             <Route path="/contact" element={<Contact />} />
