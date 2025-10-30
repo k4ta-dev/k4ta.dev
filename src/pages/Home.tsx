@@ -8,7 +8,7 @@ export default function Home() {
       <h1 className="text-2xl sm:text-4xl font-bold mb-6 sm:mb-8 text-accent-blue">Hi, Kata here.</h1>
       <div className="space-y-4 sm:space-y-6 max-w-xl mx-auto">
         <p className="text-base sm:text-lg leading-relaxed">
-          I'm a full stack software engineer and Linux enthusiast. I love tinkering with systems, and sharing what I learn along the way.
+          Full Stack Developer and Linux Enthusiast. 
         </p>
         <div className="mt-6 sm:mt-8 flex justify-center gap-4 sm:gap-6">
           <a href="mailto:kaneda0@protonmail.com" className="button-like inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16">

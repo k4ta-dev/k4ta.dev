@@ -11,13 +11,13 @@ interface Rice {
 const rices: Rice[] = [
   { id: '01', title: 'Current Workhorse', subtitle: 'Default Cosmic on CachyOS', image: '/images/rice/01.png' },
   { id: '02', title: 'One time i touched KDE', subtitle: 'KDE Plasma 6 on Arch Linux', image: '/images/rice/02.png' },
-  { id: '03', title: 'The best XFCE setup', subtitle: 'XFCE on Arch', image: '/images/rice/05.png' },
-  { id: '04', title: 'Hyprslop Shit', subtitle: 'So ashamed of ever using Hyrpland', image: '/images/rice/06.png' },
-  { id: '05', title: 'Qtile in its glory', subtitle: 'One of the first customizations i did mon linux', image: '/images/rice/07.png' },
-  { id: '06', title: 'Trying out Fedora with I3', subtitle: 'PLZ ignore terminal contents', image: '/images/rice/08.png' },
-  { id: '07', title: 'Either Qtile or I3, its so old...', subtitle: 'From high school times', image: '/images/rice/09.png' },
-  { id: '08', title: 'Nordic Qtile', subtitle: 'Qtile my beloved <3 Also from high school', image: '/images/rice/10.png' },
-  { id: '09', title: 'Qtile AGAIN', subtitle: 'This one is insanely old, one of the first in fact.', image: '/images/rice/11.png' },
+  { id: '03', title: 'The best XFCE setup', subtitle: 'XFCE on Arch', image: '/images/rice/03.png' },
+  { id: '04', title: 'Hyprslop Shit', subtitle: 'So ashamed of ever using Hyrpland', image: '/images/rice/04.png' },
+  { id: '05', title: 'Qtile in its glory', subtitle: 'One of the first customizations i did mon linux', image: '/images/rice/05.png' },
+  { id: '06', title: 'Trying out Fedora with I3', subtitle: 'PLZ ignore terminal contents', image: '/images/rice/06.png' },
+  { id: '07', title: 'Either Qtile or I3, its so old...', subtitle: 'From high school times', image: '/images/rice/07.png' },
+  { id: '08', title: 'Nordic Qtile', subtitle: 'Qtile my beloved <3 Also from high school', image: '/images/rice/08.png' },
+  { id: '09', title: 'Qtile AGAIN', subtitle: 'This one is insanely old, one of the first in fact.', image: '/images/rice/09.png' },
 ];
 
 export default function Rices() {

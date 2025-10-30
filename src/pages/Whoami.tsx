@@ -5,7 +5,8 @@ export default function Whoami() {
       <div className="brand-border bg-accent-blue">
         <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white">[ About ]</h2>
         <p className="leading-relaxed mb-3 text-white text-sm sm:text-base">
-          I build robust, scalable systems and love working where backend, DevOps, and clean architecture meet. I’ve also built production-ready blockchain integrations and EVM smart contracts.
+          I build stuff, mostly Backend oriented, but I'm getting good with frontend as well. My experience mostly covers full stack applications,
+          B2B projects, blockchain integrations and smart contracts. Also love tinkering with servers, barebone hardware and Linux systems in general.
         </p>
       </div>
 
@@ -19,7 +20,6 @@ export default function Whoami() {
               <li>TypeScript</li>
               <li>Python</li>
               <li>Solidity</li>
-              <li>Golang (Learning)</li>
             </ul>
           </div>
           <div>
@@ -27,7 +27,6 @@ export default function Whoami() {
             <ul className="list-disc list-inside space-y-1 opacity-90 text-sm sm:text-base">
               <li>React</li>
               <li>Tailwind CSS</li>
-              <li>Vite / Modern Tooling</li>
               <li>Express.js</li>
             </ul>
           </div>
@@ -46,7 +45,6 @@ export default function Whoami() {
               <li>Rust</li>
               <li>Golang</li>
               <li>C/C++</li>
-              <li>System Design & Optimization</li>
             </ul>
           </div>
         </div>
