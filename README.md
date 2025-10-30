@@ -2,6 +2,8 @@
 
 This is my personal website built in react. 
 
+<img width="1876" height="1072" alt="Screenshot_2025-10-30_11-57-59" src="https://github.com/user-attachments/assets/54ceec4d-fcbc-4f6b-834c-668b418aafd5" />
+
 # Website Info:
 
 Currently, two official plugins are available:
