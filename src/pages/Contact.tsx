@@ -13,18 +13,18 @@ export default function Contact() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-4 sm:space-y-6">
+    <div className="flex justify-center items-center h-[calc(100vh-6rem)] px-4 sm:px-6">
       <div className="brand-border w-full max-w-2xl mx-auto">
         <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-accent-blue">[ Contact Me ]</h1>
         
         {/* Social Links Section */}
         <div className="mb-6 sm:mb-8 p-3 sm:p-4 bg-accent-blue text-white">
           <p className="mb-3 sm:mb-4 text-center font-bold text-sm sm:text-base">
-            Use proper channels before resorting to below form, i'm paying for API, SMTP is blocked :D
+            Use proper channels for now, the lion is working hard to implement below form.
           </p>
           <div className="flex justify-center gap-4 sm:gap-6">
             <a 
-              href="mailto:kaneda0@protonmail.com" 
+              href="mailto:sabamksh@gmail.com" 
               className="flex items-center gap-2 hover:opacity-80 transition-opacity"
               target="_blank"
               rel="noopener noreferrer"
@@ -42,7 +42,7 @@ export default function Contact() {
               <span className="text-sm sm:text-base">GitHub</span>
             </a>
             <a 
-              href="https://discord.gg/katanotkate" 
+              href="https://discord.com/users/1065407157631197205" 
               className="flex items-center gap-2 hover:opacity-80 transition-opacity"
               target="_blank"
               rel="noopener noreferrer"
@@ -52,11 +52,6 @@ export default function Contact() {
             </a>
           </div>
         </div>
-
-        <p className="mb-4 sm:mb-6 opacity-90 text-sm sm:text-base">
-          Or if you insist, use the form below:
-        </p>
-
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label htmlFor="email" className="block text-sm font-bold mb-2">
@@ -89,7 +84,8 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="button-like w-full md:w-auto px-8 py-3"
+            disabled
+            className="button-like w-full md:w-auto px-8 py-3 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             [ Send Message ]
           </button>
