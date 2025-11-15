@@ -5,7 +5,6 @@ import Whoami from "./pages/Whoami";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
-import Rices from "./pages/Rices";
 
 export default function App() {
   return (
@@ -20,7 +19,6 @@ export default function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogPost />} />
-            <Route path="/rices" element={<Rices />} />
           </Routes>
         </main>
       </div>
